@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
-addgroup --quiet --gid "32767" "herokuishuser" && \
+addgroup --quiet --gid "1000" "vchavkov" && \
 adduser \
     --shell /bin/bash \
     --disabled-password \
     --force-badname \
     --no-create-home \
-    --uid "32767" \
-    --gid "32767" \
+    --uid "1000" \
+    --gid "1000" \
     --gecos '' \
     --quiet \
     --home "/app" \
-    "herokuishuser"
+    "vchavkov"
