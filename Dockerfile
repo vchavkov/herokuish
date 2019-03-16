@@ -18,4 +18,5 @@ RUN /bin/herokuish buildpack install \
   && ln -s /bin/herokuish /start \
   && ln -s /bin/herokuish /exec
 COPY include/default_user.bash /tmp/default_user.bash
+COPY bin/jq /bin/jq
 RUN bash /tmp/default_user.bash && rm -f /tmp/default_user.bash
